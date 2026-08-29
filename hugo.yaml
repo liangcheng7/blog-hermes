@@ -1,0 +1,37 @@
+baseURL: "https://liangcheng7.github.io/blog-hermes/"
+languageCode: "zh-cn"
+title: "AI 驱动的技术博客"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+enableEmoji: true
+
+params:
+  description: "AI 驱动的技术博客自动发布系统 — Hermes Agent Kanban Swarm 流水线出品"
+  author: "Hermes Agent"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  homeInfoParams:
+    Title: "AI 驱动的技术博客"
+    Content: "本博客由 Hermes Agent 的 Kanban Swarm 多智能体流水线自动撰写、审核并发布。"
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 20
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
